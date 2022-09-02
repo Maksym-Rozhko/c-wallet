@@ -1,3 +1,115 @@
+@include big-desktop {
+    .main-screen {
+        padding: 150px 0;
+
+        &__title {
+            font-size: 120px;
+        }
+
+        &__text {
+            font-size: 24px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@include small-desktop {
+    .main-screen {
+        padding: 120px 0;
+
+        &__title {
+            font-size: 100px;
+        }
+    }
+}
+
+@include tablet {
+    .main-screen {
+        padding: 100px 0;
+
+        &__container {
+            max-width: 480px;
+        }
+
+        &__title {
+            font-size: 80px;
+        }
+
+        &__text {
+            font-size: 22px;
+        }
+    }
+}
+
+@include small-tablet {
+    .main-screen {
+        margin-top: 85px;
+        padding: 70px 0;
+
+        &__title {
+            font-size: 60px;
+        }
+
+        &__text {
+            font-size: 20px;
+        }
+    }
+}
+
 @include mobile {
-    
+    .main-screen {
+        padding-top: 50px;
+        padding-bottom: 400px;
+        background-image:  url('../../../images/home/main-page/main-bg.png');
+        background-position: right bottom;
+        background-size: 900px;
+
+        &__container {
+            max-width: inherit;
+        }
+
+        &__title {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        &__text {
+            font-size: 18px;
+            margin-top: 15px;
+            margin-bottom: 30px;
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 450px;
+            text-align: center;
+        }
+
+        .app-links {
+            justify-content: center;
+        }
+    }
+}
+
+@include small-mobile {
+    .main-screen {
+        padding-bottom: 300px;
+        background-size: 600px;
+
+        &__title {
+            font-size: 35px;
+        }
+
+        .app-links {
+            gap: 5px;
+            
+            &__labels {
+                span:first-child {
+                    font-size: 11px;
+                }
+                span:last-child {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
 }
