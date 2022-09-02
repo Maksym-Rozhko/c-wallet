@@ -19,9 +19,17 @@
     margin-bottom: 0;
     font-weight: 500;
     font-size: 80px;
-    line-height: 110%;
-    letter-spacing: -0.05em;
-    color: var(--cs-text);
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: -0.035em;
+    color: var(--cs-white);
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+
+    & .accent {
+        color: var(--cs-main);
+    }
 }
 
 @mixin text {

@@ -32,3 +32,121 @@
         @include app-links;
     }
 }
+
+.multicurr {
+    padding-top: 150px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+
+    &__title {
+        @include title;
+    }
+
+    &__text {
+        @include text;
+        max-width: 470px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 35px;
+        margin-bottom: 120px;
+    }
+
+    &__images {
+        position: relative;
+        
+        img {
+            display: block;
+        }
+
+        .main.mob {
+            display: none;
+        }
+
+        .pos-ab {
+            position: absolute;
+            transition: all ease-in-out .4s;
+        }
+
+        .cloud-white {
+            left: 220px;
+            bottom: -150px;
+        }
+
+        .coin-lg {
+            bottom: -80px;
+            right: 420px;
+        }
+
+        .bitcoin {
+            bottom: 100px;
+            left: 570px;
+            opacity: 0;
+        }
+
+        .tron {
+            bottom: 5px;
+            right: 538px;
+        }
+
+        .coin-small {
+            bottom: 136px;
+            right: 420px;
+            opacity: 0;
+        }
+
+        .binance {
+            bottom: 236px;
+            left: 530px;
+        }
+
+        .ether {
+            top: 10px;
+            right: 500px;
+        }
+
+        .tron,
+        .binance,
+        .ether {
+            transform: scale(0);
+        }
+
+        .cloud-grey {
+            top: 20px;
+            right: 600px;
+            z-index: -1;
+        }
+
+        .coin-sm {
+            top: -30px;
+            left: 500px;
+            opacity: 0;
+        }
+    }
+
+    &__container.animated {
+        .multicurr__title {
+            animation: typing 3.5s steps(40, end) forwards;
+        }
+
+        .cloud-white,
+        .coin-lg {
+            bottom: 0px;
+        }
+        
+        .bitcoin,
+        .coin-small,
+        .coin-sm {
+            opacity: 1;
+        }
+        .tron,
+        .binance,
+        .ether {
+            transform: scale(1);
+        }
+        .cloud-grey {
+            top: -50px;
+            right: 500px;
+        }
+    }
+}
