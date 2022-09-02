@@ -26,20 +26,19 @@
 
 @mixin socials {
     .list {
-        gap: 10px;
+        @include flex-v-center;
+        gap: 15px;
+        margin-left: 70px;
 
         &__link {
-            background: rgba(234, 235, 240, .05);
-            border-radius: 4px;
             @include flex-all-center;
-            width: 35px;
-            height: 35px;
-            border-radius: 8px;
+            width: 20px;
+            height: 20px;
 
             .icon {
-                width: 15px;
-                height: 15px;
-                fill: var(--cs-text);
+                width: 20px;
+                height: 20px;
+                fill: var(--cs-social);
                 transition: all ease-in-out .4s;
             }
 

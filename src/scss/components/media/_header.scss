@@ -1,4 +1,90 @@
-@include mobile {
-
+@include tablet {
+    .header {
+        .nav {
+            ul {
+                li:not(:last-child) {
+                    margin-right: 20px;
+                }
+            }
+        }
+        .socials {
+            .list {
+                margin-left: 25px;
+            }
+        }
+    }
 }
 
+@include small-tablet {
+    .header {
+        &__group {
+            display: none;
+        }
+        .burger {
+            display: flex;
+        }
+        .mobile-menu {
+            .nav {
+                ul {
+                    flex-direction: column;
+
+                    li.parent {
+                        // padding-right: 20px;
+                        a {
+                            &::after {
+                                background-image: none;
+                                height: 1px;
+                                width: 0%;
+                                left: 0;
+                                top: inherit;
+                                bottom: -1px;
+                                transform: none;
+                            }
+
+                            &:hover::after {
+                                width: 100%;
+                            }
+                        }
+                        ul {
+                            max-height: 0;
+                            padding: 0;
+                            transform: translateX(0);
+                            position: static;
+                        }
+                        &:hover {
+                            ul {
+                                max-height: 100%;
+                                padding: 10px 25px;
+                            }
+                        }
+                    }
+                    li {
+                        a {
+                            padding: 10px 25px;
+                            min-width: 300px;
+                            display: block;
+                            text-align: center;
+                            font-size: 18px;
+                        }
+                    }
+                    li:not(:last-child) {
+                        margin-right: 0;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            .socials {
+                .list {
+                    margin-left: 0;
+                    justify-content: center;
+
+                    &__link,
+                    &__link .icon {
+                        width: 35px;
+                        height: 35px;
+                    }
+                }
+            }
+        }
+    }
+}
