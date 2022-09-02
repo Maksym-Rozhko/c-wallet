@@ -104,14 +104,14 @@
 //     }
 // }
 
-// @keyframes decreaseOpacity {
-//     0% {
-//         opacity: 1;
-//     }
-//     100% {
-//         opacity: 0;
-//     }
-// }
+@keyframes decreaseOpacity {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 
 // @keyframes increaseOpacity {
 //     0% {
@@ -143,16 +143,16 @@
 	}
 }
 
-// @keyframes decreaseScale {
-//     0% {
-//         transform: scale(1);
-// 		opacity: 1;
-//     }
-//     100% {
-// 		transform: scale(0);
-// 		opacity: 1;
-//     }
-// }
+@keyframes decreaseScale {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0);
+      opacity: 0;
+    }
+}
 
 // @keyframes increaseScaleSm {
 //     0% {
@@ -180,6 +180,26 @@
 //         transform: translate(-100%, -100%);
 //     }
 // }
+
+@keyframes rotAnim {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+@keyframes drawMe {
+    0% {
+      stroke-dashoffset: 900;
+    }
+    80% {
+      stroke-dashoffset: 400;
+    }
+    100% {
+      stroke-dashoffset: 400;
+    }
+}
 
 // /* The typing effect */
 // @keyframes typing {
