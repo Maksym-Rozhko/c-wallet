@@ -282,7 +282,12 @@
     background-size: cover;
 
         &.remove {
-            animation: decreaseScale 4s infinite linear;
+            animation: decreaseOpacity 4s infinite linear;
+
+            .main-icon,
+            .icon {
+                animation: decreaseScale 4s infinite linear;
+            }
         }
             
     .main-icon {
