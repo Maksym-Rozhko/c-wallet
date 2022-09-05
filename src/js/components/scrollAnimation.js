@@ -16,3 +16,5 @@ const scrollAnimation = endElem => {
 };
 
 scrollAnimation('.multicurr .end-elem');
+scrollAnimation('.steps .end-elem');
+scrollAnimation('.try .end-elem');

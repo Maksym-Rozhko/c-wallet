@@ -1,16 +1,33 @@
 @mixin btn-main {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
+    display: block;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
     color: var(--cs-text);
-    border-radius: 30px;
-    padding: 6px 16px;
+    border-radius: 20px;
+    text-align: center;
+    letter-spacing: -0.035em;
+    padding: 17px;
+    max-width: 200px;
+    width: 100%;
     background: rgba(234, 235, 240, 0.1);
     transition: all ease-in-out .4s;
     position: relative;
     
     &:hover {
         color: var(--cs-main);
+    }
+
+    &--white {
+        background-color: var(--cs-white);
+        color: var(--cs-main);
+        border: 1px solid transparent;
+
+        &:hover {
+            border: 1px solid var(--cs-white);
+            background-color: transparent;
+            color: var(--cs-white);
+        }
     }
 }
 

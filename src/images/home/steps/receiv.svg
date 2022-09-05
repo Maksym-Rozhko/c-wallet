@@ -1,0 +1,24 @@
+<svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_202_4051)">
+<circle cx="47.5" cy="47.5" r="17.5" fill="#F77052"/>
+</g>
+<g filter="url(#filter1_b_202_4051)">
+<rect x="30" y="30" width="80" height="80" rx="20" fill="white" fill-opacity="0.03"/>
+<rect x="30.5" y="30.5" width="79" height="79" rx="19.5" stroke="white" stroke-opacity="0.2"/>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M71.4224 79.1349L77.7887 82.8107V75.4655L71.4257 71.7929V78.7013C71.4257 78.7184 71.4249 78.7355 71.424 78.7527C71.4232 78.7704 71.4224 78.7881 71.4224 78.8059V79.1349ZM79.6405 75.4654V82.8108L85.9999 79.1379V71.7924L79.6405 75.4654ZM78.4625 66.3711L85.0742 70.1882L78.7147 73.861L72.103 70.0439L78.4625 66.3711Z" fill="white" fill-opacity="0.5"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M61.3597 75.4654L55 71.7924V79.1379L61.3597 82.8108V75.4654ZM69.5742 61.559L63.2112 57.8865V64.622L69.5742 68.2949V61.559ZM77.7888 57.8865L71.4258 61.5587V68.2949L77.7888 64.622V57.8865ZM63.2112 82.8107L69.5776 79.1349V78.8057C69.5776 78.788 69.5768 78.7705 69.5759 78.753C69.5751 78.7356 69.5742 78.7183 69.5742 78.7011V71.7927L63.2112 75.4652V82.8107ZM63.609 55.9772L70.5 52L77.3871 55.9772L70.5 59.9548L63.609 55.9772ZM55.9259 70.1882L62.5376 66.3711L68.8971 70.0439L62.2854 73.8611L55.9259 70.1882Z" fill="white"/>
+<defs>
+<filter id="filter0_f_202_4051" x="0" y="0" width="95" height="95" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="15" result="effect1_foregroundBlur_202_4051"/>
+</filter>
+<filter id="filter1_b_202_4051" x="-10" y="-10" width="160" height="160" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImage" stdDeviation="20"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_202_4051"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_202_4051" result="shape"/>
+</filter>
+</defs>
+</svg>
