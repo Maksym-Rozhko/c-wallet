@@ -23,3 +23,6 @@ scrollAnimation('.manage .end-elem1');
 scrollAnimation('.manage .end-elem2');
 scrollAnimation('.manage .end-elem3');
 scrollAnimation('.manage .end-elem4');
+scrollAnimation('.securely .end-elem1');
+scrollAnimation('.securely .end-elem2');
+scrollAnimation('.main .securely-end-elem');

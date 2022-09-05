@@ -29,8 +29,20 @@
     }
     .steps,
     .try,
-    .manage {
+    .manage,
+    .securely {
         padding: 120px 0;
+    }
+
+    .securely {
+        &::after {
+            background: url('../../images/home/securely/mac.png') no-repeat center right/800px;
+        }
+
+        &__title-groups {
+            position: relative;
+            z-index: 1;
+        }
     }
 }
 
@@ -45,6 +57,11 @@
     .try {
         &__container {
             padding: 50px 75px;
+        }
+    }
+    .securely {
+        &::after {
+            background: url('../../images/home/securely/mac.png') no-repeat top 100px right/600px;
         }
     }
 }
@@ -145,6 +162,19 @@
             }
         }
     }
+    .securely {
+        padding: 100px 0;
+
+        &::after {
+            background: url('../../images/home/securely/mac.png') no-repeat top 50px right/500px;
+        }
+
+        &__title-groups {
+            span {
+                font-size: 60px;
+            }
+        }
+    }
 }
 
 @include small-tablet {
@@ -229,6 +259,19 @@
             }
             &__descript {
                 font-size: 20px;
+            }
+        }
+    }
+    .securely {
+        padding: 70px 0;
+
+        &::after {
+            background: url('../../images/home/securely/mac.png') no-repeat top 50px right/300px;
+        }
+
+        &__title-groups {
+            span {
+                font-size: 40px;
             }
         }
     }
@@ -374,6 +417,49 @@
             }
         }
     }
+    .securely {
+        padding: 50px 0;
+
+        &::after {
+            background: url('../../images/home/securely/mac.png') no-repeat top 50px right/300px;
+        }
+
+        &__title-groups {
+            margin-bottom: 125px;
+
+            span {
+                font-size: 30px;
+            }
+        }
+
+        .assets {
+            &__item {
+                padding: 10px 22px;
+                min-height: 76px;
+
+                &:nth-child(2) {
+                    transform: translateY(-91px);
+                }
+                
+                &:last-child {
+                    transform: translateY(-182px);
+                }
+            }
+            &__icon {
+                padding-right: 17px;
+                margin-right: 15px;
+
+                .icon {
+                    width: 30px;
+                    height: 30px;
+                    min-width: 30px;
+                }
+            }
+            &_descript {
+                font-size: 16px;
+            }
+        }
+    }
 }
 
 @include small-mobile {
@@ -439,6 +525,17 @@
     .manage {
         &__title {
             font-size: 24px;
+        }
+    }
+    .securely {
+        &::after {
+            opacity: .7;
+        }
+
+        .assets {
+            &__descript {
+                font-size: 16px;
+            }
         }
     }
 }
