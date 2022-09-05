@@ -28,7 +28,8 @@
         }
     }
     .steps,
-    .try {
+    .try,
+    .manage {
         padding: 120px 0;
     }
 }
@@ -106,6 +107,44 @@
             }
         }
     }
+    .manage {
+        padding: 100px 0;
+
+        &::after {
+            width: 230px;
+            height: 230px;
+            bottom: -115px;
+            left: -115px;
+        }
+
+        &__title {
+            font-size: 60px;
+        }
+
+        .mobile {
+            margin-top: 40px;
+            margin-bottom: 40px;
+
+            &__item {
+                &:nth-child(2) {
+                    margin-top: 45px;
+    
+                    .mobile__amount {
+                        margin-top: 25px;
+                    }
+                }
+            }
+            &__amount {
+                font-size: 60px;
+                margin-top: 45px;
+                margin-bottom: 15px;
+            }
+            &__descript {
+                font-size: 22px;
+                text-align: center;
+            }
+        }
+    }
 }
 
 @include small-tablet {
@@ -157,6 +196,40 @@
         &__title {
             font-size: 30px;
             margin-bottom: 15px;
+        }
+    }
+    .manage {
+        padding: 70px 0;
+
+        &::after {
+            width: 200px;
+            height: 200px;
+            bottom: -100px;
+            left: -100px;
+        }
+
+        &__title {
+            font-size: 40px;
+        }
+
+        .mobile {
+            &__item {
+                &:nth-child(2) {
+                    margin-top: 25px;
+    
+                    .mobile__amount {
+                        margin-top: 15px;
+                    }
+                }
+            }
+            &__amount {
+                font-size: 40px;
+                margin-top: 25px;
+                margin-bottom: 10px;
+            }
+            &__descript {
+                font-size: 20px;
+            }
         }
     }
 }
@@ -275,6 +348,32 @@
             padding: 12px;
         }
     }
+    .manage {
+        padding: 50px 0;
+
+        &::after {
+            width: 150px;
+            height: 150px;
+            bottom: -75px;
+            left: -75px;
+        }
+
+        &__title {
+            font-size: 30px;
+        }
+
+        .mobile {
+            flex-direction: column;
+            align-items: center;
+
+            &__amount {
+                font-size: 30px;
+            }
+            &__descript {
+                font-size: 18px;
+            }
+        }
+    }
 }
 
 @include small-mobile {
@@ -335,6 +434,11 @@
 
         .btn-main {
             max-width: inherit;
+        }
+    }
+    .manage {
+        &__title {
+            font-size: 24px;
         }
     }
 }

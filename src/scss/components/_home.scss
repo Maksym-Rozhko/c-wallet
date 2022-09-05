@@ -306,3 +306,107 @@
         }
     }
 }
+
+.screen {
+    &__image {
+        .image {
+            transform: scale(0);
+            border-radius: 1000px;
+            transition: all ease-in-out .4s;
+        }
+    }
+
+    &__image.animated {
+        .image {
+            border-radius: 0px;
+            transform: scale(1);
+        }
+    }
+}
+
+.manage {
+    padding-top: 150px;
+    padding-bottom: 125px;
+    background: url('../../images/home/manage/manage-bg.jpg') no-repeat bottom/contain;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        background: radial-gradient(32.46% 32.46% at 79.85% 10.82%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, linear-gradient(218.39deg, rgba(255, 255, 255, 0.2) 14.89%, rgba(255, 255, 255, 0) 85.04%), linear-gradient(217.58deg, #6356FE 15.61%, #F67052 84.1%);
+        box-shadow: -31px 14px 54px rgba(0, 0, 0, 0.3);
+        border-radius: 50%;
+        width: 329px;
+        height: 329px;
+        bottom: -164px;
+        left: -164px;
+    }
+
+    &__title {
+        @include title;
+
+        &.animated {
+            animation: typing 3.5s steps(40, end) forwards;
+        }
+    }
+
+    .btn-main {
+        @include btn-main;
+        margin: 0 auto;
+    }
+
+    .mobile {
+        margin-top: 95px;
+        margin-bottom: 80px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+
+        &__item {
+            @include flex-v-center;
+            flex-direction: column;
+
+            &:nth-child(2) {
+                margin-top: 85px;
+
+                .mobile__amount {
+                    margin-top: 60px;
+                }
+            }
+        }
+
+        &__image {
+            .image {
+                transform: rotateY(-90deg);
+                transition: all ease-in-out .4s;
+            }
+
+            &.animated {
+                .image {
+                    transform: rotateY(0);
+                }
+            }
+        }
+
+        &__amount {
+            font-weight: 500;
+            font-size: 80px;
+            line-height: 100%;
+            letter-spacing: -0.035em;
+            color: var(--cs-white);
+            margin-top: 95px;
+            margin-bottom: 18px;
+        }
+
+        &__descript {
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 150%;
+            letter-spacing: -0.035em;
+            color: var(--cs-white); 
+        }
+    }
+}
