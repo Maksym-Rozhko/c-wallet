@@ -38,6 +38,13 @@
                         font-size: 16px;
                         line-height: 150%;
                         color: rgba(255, 255, 255, 0.5);
+                        transition: all ease-in-out .4s;
+                    }
+                    
+                    &:hover {
+                        a {
+                            color: #7167E1;
+                        }
                     }
 
                     &:not(:last-child) {
@@ -55,24 +62,40 @@
 
         .app-links {
             @include app-links;
+            justify-content: flex-end;
             max-width: 356px;
             width: 100%;
             gap: 20px;
 
-            &__link {
+            .btn-main {
+                @include btn-main;
+                background: #7167E1;
+                border: 1px solid transparent;
+                font-size: 16px;
                 max-width: 168px;
-                padding: 7px;
+                padding: 14px;
+    
+                &:hover {
+                    color: #7167E1;
+                    border: 1px solid #7167E1;
+                    background: transparent;
+                }
             }
-            &__labels {
-                gap: 0;
 
-                span:first-child {
-                    font-size: 9px;
-                }
-                span:last-child {
-                    font-size: 16px;
-                }
-            }
+            // &__link {
+            //     max-width: 168px;
+            //     padding: 7px;
+            // }
+            // &__labels {
+            //     gap: 0;
+
+            //     span:first-child {
+            //         font-size: 9px;
+            //     }
+            //     span:last-child {
+            //         font-size: 16px;
+            //     }
+            // }
         }
     }
 
