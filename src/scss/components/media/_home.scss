@@ -124,6 +124,11 @@
             }
         }
     }
+    .screen {
+        &__title {
+            font-size: 60px;
+        }
+    }
     .manage {
         padding: 100px 0;
 
@@ -226,6 +231,11 @@
         &__title {
             font-size: 30px;
             margin-bottom: 15px;
+        }
+    }
+    .screen {
+        &__title {
+            font-size: 40px;
         }
     }
     .manage {
@@ -441,6 +451,26 @@
 
         &__container.animated {
             background: url('../../../images/home/banner/phones-mb.png') no-repeat center bottom/auto, url('../../images/home/banner/banner-bg-mob.png') no-repeat center/cover;
+        }
+    }
+    .screen {
+        &__title {
+            font-size: 40px;
+            white-space: normal;
+            margin-bottom: 40px;
+
+            &.animated {
+                animation: none;
+            }
+        }
+        &__image-top {
+            .image {
+                display: none;
+            }
+            .image.mob {
+                margin: 0 auto;
+                display: block;
+            }
         }
     }
     .manage {
