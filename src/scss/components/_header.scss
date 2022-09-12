@@ -113,7 +113,7 @@
                 }
 
                 &:not(:last-child) {
-                    margin-right: 72px;
+                    margin-right: 60px;
                 }
             }
         }
@@ -192,7 +192,7 @@
                         width: 23px;
                         height: 23px;
                         opacity: .3;
-                        transition:  all ease-in-out .4s
+                        transition:  all ease-in-out .4s;
                     }
                 }
 
@@ -221,6 +221,18 @@
     }
     .socials {
         @include socials;
+    }
+    .sign-in {
+        display: flex;
+
+        svg {
+            color: #7167E1;
+            transition:  all ease-in-out .4s;
+        }
+
+        &:hover svg {
+            color: var(--cs-white);
+        }
     }
 }
 

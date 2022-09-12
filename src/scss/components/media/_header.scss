@@ -1,7 +1,31 @@
-@include tablet {
+@include small-desktop {
     .header {
         .nav {
             ul {
+                li:not(:last-child) {
+                    margin-right: 40px;
+                }
+            }
+        }
+        .socials {
+            .list {
+                margin-left: 25px;
+                margin-right: 25px;
+            }
+        }
+    }
+}
+
+@include tablet {
+    .header {
+        .logo {
+            margin-right: 20px;
+        }
+        .nav {
+            ul {
+                li {
+                    text-align: center;
+                }
                 li:not(:last-child) {
                     margin-right: 20px;
                 }
@@ -22,6 +46,7 @@
         }
         .burger {
             display: flex;
+            top: -10px;
         }
         .mobile-menu {
             .nav {
@@ -64,18 +89,31 @@
                             min-width: 300px;
                             display: block;
                             text-align: center;
-                            font-size: 18px;
+                            font-size: 16px;
                         }
                     }
                     li:not(:last-child) {
                         margin-right: 0;
-                        margin-bottom: 20px;
+                        margin-bottom: 30px;
                     }
+                }
+            }
+            .btn-main {
+                @include btn-main;
+                background: #7167E1;
+                margin: 0 auto;
+                border: 1px solid transparent;
+
+                &:hover {
+                    color: #7167E1;
+                    border: 1px solid #7167E1;
+                    background: transparent;
                 }
             }
             .socials {
                 .list {
                     margin-left: 0;
+                    margin-right: 0;
                     justify-content: center;
 
                     &__link,

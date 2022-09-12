@@ -1,6 +1,14 @@
 /* stylelint-disable */
 @mixin burger {
     display: flex;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
     padding: 5px;
     background: transparent;
     transition: all ease-in-out .4s;
@@ -11,8 +19,6 @@
 
     .img {
         transition: all ease-in-out .4s;
-        width: 25px;
-        height: 25px;
         filter: grayscale(1);
     }
 
@@ -30,9 +36,7 @@
     }
 
     &:hover {
-        .img {
-            filter: grayscale(0);
-        }
+        background: var(--cs-main);
     }
   &.burger--active .img {
       opacity: 0;
@@ -45,7 +49,7 @@
             height: 2px;
             border-radius: none;
             padding: 0;
-            background: var(--cs-grey);
+            background: var(--cs-white);
             transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
             opacity: 1;
             top: calc(50% - 1px);

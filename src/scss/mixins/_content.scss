@@ -118,7 +118,8 @@
     .list {
         @include flex-v-center;
         gap: 15px;
-        margin-left: 70px;
+        margin-left: 40px;
+        margin-right: 40px;
 
         &__link {
             @include flex-all-center;
