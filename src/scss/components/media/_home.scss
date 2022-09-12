@@ -22,7 +22,7 @@
             .main {
                 display: none;
             }
-            .main.desktop {
+            .main.mob {
                 display: block;
             }
         }
@@ -326,7 +326,7 @@
         }
 
         &__images {
-            .main.desktop {
+            .main.mob {
                 display: none;
             }
         }
@@ -335,17 +335,23 @@
         padding: 50px 0;
 
         &__title {
-            font-size: 30px;
+            .accent {
+                display: block;
+            }
         }
 
         &__text {
             margin-bottom: 25px;
+
+            br {
+                display: none;
+            }
         }
 
         .start {
             flex-direction: column;
             align-items: center;
-
+            
             &::before,
             &::after {
                 content: none;
@@ -354,23 +360,44 @@
             &__item {
                 @include flex-all-center;
                 max-width: inherit;
-                margin-right: 25px;
+                margin-right: 0;
+                padding-bottom: 25px;
+                max-width: fit-content;
+                position: relative;
+
+                &:not(:last-child)::after {
+                    content: "";
+                    position: absolute;
+                    border-bottom: 1px solid #23232B;
+                    bottom: 0;
+                    width: 100%;
+                }
+            }
+
+            &__wrap {
+                margin-top: 25px;
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: flex-start;
             }
 
             &__icon {
-                margin-right: 15px;
+                margin-right: 21px;
 
                 img {
                     transform: translateY(0px);
                     transform: translateX(-50px);
+                    min-width: 110px;
+                    min-height: 110px;
                 }
             }
 
             &__title {
-                margin-top: 35px;
-                margin-bottom: 10px;
+                margin-top: 12px;
+                margin-bottom: 0;
                 min-width: 230px;
                 max-width: 230px;
+                text-align: left;
             }
         }
 
@@ -473,25 +500,6 @@
 }
 
 @include small-mobile {
-    .steps {
-        &__title {
-            font-size: 24px;
-        }
-
-        .start {
-            &__item {
-                margin-right: 0;
-            }
-            &__icon {
-                max-width: 80px;
-            }
-            &__title {
-                min-width: 200px;
-                max-width: 200px;
-                font-size: 16px;
-            }
-        }
-    }
     .try {
         &__title {
             font-size: 20px;
