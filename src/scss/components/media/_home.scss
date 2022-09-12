@@ -22,7 +22,7 @@
             .main {
                 display: none;
             }
-            .main.mob {
+            .main.desktop {
                 display: block;
             }
         }
@@ -305,16 +305,30 @@
         }
     }
     .multicurr {
-        padding-top: 50px;
+        background-image: url('../../../images/home/multicurr/multicurr-bg-mob.png');
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: 375px;
+        padding-top: 80px;
+        padding-bottom: 520px;
 
         &__title {
-            font-size: 30px;
+            .accent {
+                display: block;
+            }
         }
 
         &__text {
+            margin-top: 40px;
             margin-bottom: 15px;
             font-size: 18px;
             max-width: 370px;
+        }
+
+        &__images {
+            .main.desktop {
+                display: none;
+            }
         }
     }
     .steps {
@@ -459,30 +473,6 @@
 }
 
 @include small-mobile {
-    // .main-screen {
-    //     .app-links {
-    //         gap: 5px;
-
-    //         &__labels {
-    //             span:first-child {
-    //                 font-size: 11px;
-    //             }
-    //             span:last-child {
-    //                 font-size: 16px;
-    //             }
-    //         }
-    //     }
-    // }
-    .multicurr {
-        &__title {
-            font-size: 24px;
-        }
-
-        &__text {
-            font-size: 16px;
-            max-width: 300px;
-        }
-    }
     .steps {
         &__title {
             font-size: 24px;

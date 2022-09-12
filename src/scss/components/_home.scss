@@ -52,6 +52,10 @@
 
     &__title {
         @include title;
+
+        &.animated {
+            animation: typing 3.5s steps(40, end) forwards;
+        }
     }
 
     &__text {
@@ -80,19 +84,20 @@
         }
 
         .cloud-white {
-            left: 220px;
+            left: 260px;
             bottom: -150px;
         }
 
         .coin-lg {
             bottom: -80px;
-            right: 420px;
+            right: 460px;
         }
 
         .bitcoin {
-            bottom: 100px;
-            left: 570px;
+            bottom: 80px;
+            left: 500px;
             opacity: 0;
+            z-index: -1;
         }
 
         .tron {
@@ -102,18 +107,18 @@
 
         .coin-small {
             bottom: 136px;
-            right: 420px;
+            right: 510px;
             opacity: 0;
         }
 
         .binance {
-            bottom: 236px;
-            left: 530px;
+            bottom: 170px;
+            left: 540px;
         }
 
         .ether {
-            top: 10px;
-            right: 500px;
+            top: 80px;
+            right: 560px;
         }
 
         .tron,
@@ -123,23 +128,19 @@
         }
 
         .cloud-grey {
-            top: 20px;
-            right: 600px;
+            top: 80px;
+            right: 640px;
             z-index: -1;
         }
 
         .coin-sm {
-            top: -30px;
-            left: 500px;
+            top: 20px;
+            left: 550px;
             opacity: 0;
         }
     }
 
     &__container.animated {
-        .multicurr__title {
-            animation: typing 3.5s steps(40, end) forwards;
-        }
-
         .cloud-white,
         .coin-lg {
             bottom: 0px;
@@ -156,8 +157,8 @@
             transform: scale(1);
         }
         .cloud-grey {
-            top: -50px;
-            right: 500px;
+            top: 20px;
+            right: 560px;
         }
     }
 }

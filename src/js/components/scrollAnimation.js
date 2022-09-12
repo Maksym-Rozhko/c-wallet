@@ -15,7 +15,8 @@ const scrollAnimation = endElem => {
     } catch (error) {}
 };
 
-scrollAnimation('.multicurr .end-elem');
+scrollAnimation('.multicurr .end-elem1');
+scrollAnimation('.multicurr .end-elem2');
 scrollAnimation('.steps .end-elem');
 scrollAnimation('.try .end-elem');
 scrollAnimation('.screen .end-elem');
