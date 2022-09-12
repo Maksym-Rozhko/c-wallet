@@ -416,16 +416,31 @@
         padding: 50px 0;
 
         &__container {
-            padding: 25px;
+            padding-top: 80px;
+            padding-bottom: 344px;
+            padding-left: 42px;
+            padding-right: 42px;
+            max-width: 335px;
+            margin: 0 auto;
+            background: url('../../../images/home/banner/phones-mb.png') no-repeat center 900px/auto, url('../../images/home/banner/banner-bg-mob.png') no-repeat center/cover;
+
+            &::after {
+                top: inherit;
+                bottom: -80px;
+            }
         }
 
         &__title {
-            font-size: 24px;
-            margin-bottom: 15px;
+            font-size: 40px;
+            margin-bottom: 60px;
         }
 
         .btn-main {
             padding: 12px;
+        }
+
+        &__container.animated {
+            background: url('../../../images/home/banner/phones-mb.png') no-repeat center bottom/auto, url('../../images/home/banner/banner-bg-mob.png') no-repeat center/cover;
         }
     }
     .manage {
@@ -501,12 +516,9 @@
 
 @include small-mobile {
     .try {
-        &__title {
-            font-size: 20px;
-        }
-
-        .btn-main {
-            max-width: inherit;
+        &__container {
+            padding-left: 32px;
+            padding-right: 32px;
         }
     }
     .manage {
