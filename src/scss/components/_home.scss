@@ -29,6 +29,17 @@
     }
 
     .app-links {
+        .btn-main {
+            @include btn-main;
+            background: #7167E1;
+            border: 1px solid transparent;
+
+            &:hover {
+                color: #7167E1;
+                border: 1px solid #7167E1;
+                background: transparent;
+            }
+        }
         @include app-links;
     }
 }
