@@ -223,7 +223,12 @@
         @include socials;
     }
     .sign-in {
-        display: flex;
+        @include flex-v-center;
+        gap: 8px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #7167E1;
 
         svg {
             color: #7167E1;

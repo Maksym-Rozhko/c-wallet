@@ -36,7 +36,7 @@
 
     .securely {
         &::after {
-            background: url('../../images/home/securely/mac.png') no-repeat center right/800px;
+            background: url('../../images/home/securely/mac-2.png') no-repeat center right/800px;
         }
 
         &__title-groups {
@@ -61,7 +61,7 @@
     }
     .securely {
         &::after {
-            background: url('../../images/home/securely/mac.png') no-repeat top 100px right/600px;
+            background: url('../../images/home/securely/mac-2.png') no-repeat top 100px right/600px;
         }
     }
 }
@@ -171,7 +171,7 @@
         padding: 100px 0;
 
         &::after {
-            background: url('../../images/home/securely/mac.png') no-repeat top 50px right/500px;
+            background: url('../../images/home/securely/mac-2.png') no-repeat top 50px right/500px;
         }
 
         &__title-groups {
@@ -276,7 +276,7 @@
         padding: 70px 0;
 
         &::after {
-            background: url('../../images/home/securely/mac.png') no-repeat top 50px right/300px;
+            background: url('../../images/home/securely/mac-2.png') no-repeat top 50px right/300px;
         }
 
         &__title-groups {
@@ -291,7 +291,7 @@
     .main-screen {
         padding-top: 120px;
         padding-bottom: 212px;
-        background-image:  url('../../../images/home/main-page/mob-bg.png');
+        background-image:  url('../../../images/home/main-page/mob-bg-2.jpg');
         background-position: center;
         background-size: cover;
 
@@ -369,6 +369,7 @@
 
             &__item {
                 @include flex-all-center;
+                align-items: flex-start;
                 max-width: inherit;
                 margin-right: 0;
                 padding-bottom: 25px;
@@ -405,9 +406,10 @@
             &__title {
                 margin-top: 12px;
                 margin-bottom: 0;
-                min-width: 230px;
+                min-width: inherit;
                 max-width: 230px;
                 text-align: left;
+                font-size: 14px;
             }
         }
 
@@ -569,7 +571,7 @@
         }
 
         &::after {
-            background: url('../../images/home/securely/mac-mb.png') no-repeat center bottom 80px/auto;
+            background: url('../../images/home/securely/mac-mb-2.png') no-repeat center bottom 80px/auto;
         }
 
         &__title-groups {
