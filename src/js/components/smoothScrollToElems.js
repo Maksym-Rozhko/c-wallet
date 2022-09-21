@@ -20,4 +20,4 @@ const smoothScrollToElems = (links) => {
     }
 };
 
-smoothScrollToElems('.roadmap a.scroll-link');
+smoothScrollToElems('.header a.scroll-link');
