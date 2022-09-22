@@ -3,7 +3,7 @@
     padding-top: 220px;
     padding-bottom: 242px;
     position: relative;
-    background-image: url('../../images/home/main-page/main-bg-2.jpg');
+    background-image: url('../images/home/main-page/main-bg-2.jpg');
     background-repeat: no-repeat;
     background-position: right center;
     background-size: cover;
@@ -270,7 +270,7 @@
         padding-bottom: 55px;
         padding-left: 144px;
         padding-right: 144px;
-        background: url('../../images/home/banner/phones.png') no-repeat center 320px/contain, url('../../images/home/banner/banner-bg.jpg') no-repeat center/cover;
+        background: url('../images/home/banner/phones.png') no-repeat center 320px/contain, url('../images/home/banner/banner-bg.jpg') no-repeat center/cover;
         border-radius: 40px;
         position: relative;
         transition: all ease-in-out .4s;
@@ -278,7 +278,7 @@
         &::after {
             content: "";
             position: absolute;
-            background-image: url('../../images/home/banner/ball.svg');
+            background-image: url('../images/home/banner/ball.svg');
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
@@ -322,7 +322,7 @@
     }
 
     &__container.animated {
-        background: url('../../images/home/banner/phones.png') no-repeat bottom/contain, url('../../images/home/banner/banner-bg.jpg') no-repeat center/cover;
+        background: url('../images/home/banner/phones.png') no-repeat bottom/contain, url('../images/home/banner/banner-bg.jpg') no-repeat center/cover;
 
         &::after {
             transform: scale(1);
@@ -372,7 +372,7 @@
 .manage {
     padding-top: 150px;
     padding-bottom: 125px;
-    background: url('../../images/home/manage/manage-bg.jpg') no-repeat bottom/contain;
+    background: url('../images/home/manage/manage-bg.jpg') no-repeat bottom/contain;
     position: relative;
 
     &::after {
@@ -510,7 +510,7 @@
 .securely {
     padding-top: 165px;
     padding-bottom: 120px;
-    background: url('../../images/home/securely/securely-bg.jpg') no-repeat center/cover;
+    background: url('../images/home/securely/securely-bg.jpg') no-repeat center/cover;
     position: relative;
     overflow: hidden;
 
@@ -524,11 +524,11 @@
     }
 
     &::before {
-        background: url('../../images/home/securely/blur-balls.png') no-repeat right top/contain;
+        background: url('../images/home/securely/blur-balls.png') no-repeat right top/contain;
     }
 
     &::after {
-        background: url('../../images/home/securely/mac-2.png') no-repeat center right/auto;
+        background: url('../images/home/securely/mac-2.png') no-repeat center right/auto;
         right: -100%;
         transition: all ease-in-out .6s;
     }

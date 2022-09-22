@@ -36,7 +36,7 @@
 
     .securely {
         &::after {
-            background: url('../../images/home/securely/mac-2.png') no-repeat center right/800px;
+            background: url('../images/home/securely/mac-2.png') no-repeat center right/800px;
         }
 
         &__title-groups {
@@ -61,7 +61,7 @@
     }
     .securely {
         &::after {
-            background: url('../../images/home/securely/mac-2.png') no-repeat top 100px right/600px;
+            background: url('../images/home/securely/mac-2.png') no-repeat top 100px right/600px;
         }
     }
 }
@@ -171,7 +171,7 @@
         padding: 100px 0;
 
         &::after {
-            background: url('../../images/home/securely/mac-2.png') no-repeat top 50px right/500px;
+            background: url('../images/home/securely/mac-2.png') no-repeat top 50px right/500px;
         }
 
         &__title-groups {
@@ -276,7 +276,7 @@
         padding: 70px 0;
 
         &::after {
-            background: url('../../images/home/securely/mac-2.png') no-repeat top 50px right/300px;
+            background: url('../images/home/securely/mac-2.png') no-repeat top 50px right/300px;
         }
 
         &__title-groups {
@@ -291,7 +291,7 @@
     .main-screen {
         padding-top: 120px;
         padding-bottom: 212px;
-        background-image:  url('../../../images/home/main-page/mob-bg-2.jpg');
+        background-image:  url('../images/home/main-page/mob-bg-2.jpg');
         background-position: center;
         background-size: cover;
 
@@ -315,7 +315,7 @@
         }
     }
     .multicurr {
-        background-image: url('../../../images/home/multicurr/multicurr-bg-mob.png');
+        background-image: url('../images/home/multicurr/multicurr-bg-mob.png');
         background-repeat: no-repeat;
         background-position: center bottom;
         background-size: 375px;
@@ -434,7 +434,7 @@
             padding-right: 42px;
             max-width: 335px;
             margin: 0 auto;
-            background: url('../../../images/home/banner/phones-mb.png') no-repeat center 900px/auto, url('../../images/home/banner/banner-bg-mob.png') no-repeat center/cover;
+            background: url('../images/home/banner/phones-mb.png') no-repeat center 900px/auto, url('../images/home/banner/banner-bg-mob.png') no-repeat center/cover;
 
             &::after {
                 top: inherit;
@@ -452,7 +452,7 @@
         }
 
         &__container.animated {
-            background: url('../../../images/home/banner/phones-mb.png') no-repeat center bottom/auto, url('../../images/home/banner/banner-bg-mob.png') no-repeat center/cover;
+            background: url('../images/home/banner/phones-mb.png') no-repeat center bottom/auto, url('../images/home/banner/banner-bg-mob.png') no-repeat center/cover;
         }
     }
     .screen {
@@ -476,7 +476,7 @@
         }
     }
     .manage {
-        background: url('../../images/home/manage/manage-bg.jpg') no-repeat bottom/cover;
+        background: url('../images/home/manage/manage-bg.jpg') no-repeat bottom/cover;
         padding-top: 50px;
         padding-bottom: 150px;
 
@@ -564,14 +564,14 @@
     .securely {
         padding-top: 200px;
         padding-bottom: 355px;
-        background: url('../../../images/home/securely/securely-bg-mb.png') no-repeat center/cover;
+        background: url('../images/home/securely/securely-bg-mb.png') no-repeat center/cover;
 
         &::before {
             content: none;
         }
 
         &::after {
-            background: url('../../images/home/securely/mac-mb-2.png') no-repeat center bottom 80px/auto;
+            background: url('../images/home/securely/mac-mb-2.png') no-repeat center bottom 80px/auto;
         }
 
         &__title-groups {
