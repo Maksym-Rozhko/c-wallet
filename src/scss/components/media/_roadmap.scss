@@ -1,0 +1,46 @@
+@include small-desktop {
+    .roadmap-page {
+        .roadmap {
+            padding-top: 150px;
+            padding-bottom: 50px;
+            
+            &__title {
+                font-size: 60px;
+            }
+        }
+    }
+}
+
+@include small-tablet {
+    .roadmap-page {
+        .roadmap {
+            &__text br {
+                display: none;
+            }
+        }
+    }
+}
+
+@include mobile {
+    .roadmap-page {
+        .roadmap {
+            background-image: url('../images/roadmap/main-bg-mob.png');
+            padding-top: 174px;
+            padding-bottom: 60px;
+
+            &__text {
+                max-width: 335px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+
+@include small-mobile {
+    .roadmap-page {
+        .roadmap {
+            padding-top: 200px;
+        }
+    }
+}
