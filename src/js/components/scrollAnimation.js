@@ -32,3 +32,4 @@ scrollAnimation('.main .securely-end-elem');
 scrollAnimation('.stages .end-elem1');
 scrollAnimation('.stages .end-elem2');
 scrollAnimation('.stages .end-elem3');
+scrollAnimation('.support .end-elem');
