@@ -358,4 +358,118 @@
             }
         }
     }
+    .try {
+        padding-top: 125px;
+        padding-bottom: 125px;
+        background-color: #7167E1;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            background: radial-gradient(32.46% 32.46% at 79.85% 10.82%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%), 
+            linear-gradient(218.39deg, rgba(255, 255, 255, 0.2) 14.89%, rgba(255, 255, 255, 0) 85.04%), linear-gradient(217.58deg, #6356FE 15.61%, #F67052 84.1%);
+        }
+
+        &::before {
+            filter: blur(8px);
+            width: 36px;
+            height: 36px;
+            top: 148px;
+            right: 43px;
+        }
+
+        &::after {
+            filter: blur(21.5px);
+            width: 111px;
+            height: 111px;
+            bottom: 42px;
+            right: 49px;
+        }
+
+        &__title {
+            font-weight: 500;
+            font-size: 60px;
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .btn-main {
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        &__wrapper {
+            .pos-ab {
+                position: absolute;
+                transition: all ease-in-out .4s;
+            }
+            
+            .cloud-opac {
+                bottom: -100%;
+                left: -100%;
+            }
+
+            .coin-l {
+                bottom: -100%;
+                left: 500px;
+            }
+
+            .coin-sm-l {
+                bottom: 123px;
+                left: 400px;
+                opacity: 0;
+            }
+
+            .coin-r {
+                bottom: -100%;
+                right: 530px;
+            }
+
+            .coin-sm-r {
+                bottom: 123px;
+                right: 420px;
+                opacity: 0;
+            }
+
+            .cloud-fill {
+                bottom: 0;
+                right: -100%;
+                z-index: 1;
+            }
+        }
+
+        &__wrapper.animated {
+            .cloud-opac {
+                bottom: 0;
+                left: 0;
+            }
+
+            .coin-l {
+                bottom: 0;
+            }
+
+            .coin-sm-l {
+                opacity: 1;
+            }
+
+            .coin-r {
+                bottom: 0;
+            }
+
+            .coin-sm-r {
+                opacity: 1;
+            }
+
+            .cloud-fill {
+                right: 55px;
+            }
+        }
+    }
 }
