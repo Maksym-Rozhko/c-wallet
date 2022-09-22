@@ -1,3 +1,21 @@
+@include big-desktop {
+    .roadmap-page {
+        .stages {
+            .stage--planned {
+                .stage__item {
+                    &:nth-child(2) {
+                        margin-left: inherit;
+                    }
+    
+                    &:nth-child(3) {
+                        margin-right: inherit;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @include small-desktop {
     .roadmap-page {
         .roadmap {
@@ -8,6 +26,30 @@
                 font-size: 60px;
             }
         }
+        .stages {
+            .stage {
+                &::before {
+                    transform: translateY(20px);
+                }
+
+                &__title {
+                    margin-bottom: 40px;
+                }
+                &__list {
+                    gap: 76px 15px;
+                }
+                &__item {
+                    font-size: 14px;
+                    padding: 11px;
+                    text-align: center;
+                }
+            }
+            .stage--planned {
+                &::before {
+                    transform: translateY(30px);
+                }
+            }
+        }
     }
 }
 
@@ -16,6 +58,66 @@
         .roadmap {
             &__text br {
                 display: none;
+            }
+        }
+        .stages {
+            padding-top: 100px;
+            padding-bottom: 80px;
+
+            &__container {
+                background-image: none;
+            }
+            .stage {
+                &::before {
+                    content: none;
+                }
+                &__list {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 25px;
+                }
+                &__title {
+                    max-width: fit-content;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 50px;
+                }
+                &__item {
+                    font-size: 16px;
+                    max-width: 335px;
+                    width: 100%;
+                    
+                    &::after {
+                        content: none;
+                    }
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                    &:nth-child(4),
+                    &:nth-child(5),
+                    &:nth-child(6) {
+                        margin-left: inherit;
+                    }
+                }
+            }
+            .stage--process {
+                padding: 50px 0;
+                margin: 50px 0;
+                .stage__item {
+                    &:nth-child(4) {
+                        margin-right: inherit;
+                    }
+                }
+            }
+            .stage--planned {
+                .stage__item {
+                    white-space: inherit;
+
+                    &:nth-child(3) {
+                        margin-left: inherit;
+                    }
+                }
             }
         }
     }

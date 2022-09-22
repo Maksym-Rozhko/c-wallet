@@ -39,4 +39,323 @@
             color: #FFFFFF;
         }
     }
+
+    .stages {
+        padding-top: 150px;
+        padding-bottom: 200px;
+        background-color: #16161C;
+
+        &__container {
+            background-image: url('../images/roadmap/stages/grid.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .stage {
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                transform: translateY(30px);
+                left: 0;
+                height: 34px;
+                width: 0;
+                transition: all ease-in-out .4s;
+            }
+
+            &__title {
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 150%;
+                color: #FFFFFF;
+                position: relative;
+                padding-left: 40px;
+                margin-top: 0;
+                margin-bottom: 60px;
+                overflow: hidden;
+                white-space: nowrap;
+
+                .accent {
+                    font-weight: 400;
+                }
+    
+                &::before {
+                    content: "";   
+                    position: absolute;
+                    width: 26px;
+                    height: 26px;
+                    border-radius: 50%;
+                    left: 0;
+                    top: 50%;
+                    backdrop-filter: blur(20px);
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    transform: translateY(-50%);
+                }
+            }
+
+            &__list {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 76px;
+            }
+
+            &__item {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 150%;
+                color: #FFFFFF;
+                padding: 11px 30px;
+                backdrop-filter: blur(20px);
+                border-radius: 20px;
+                max-width: fit-content;
+                position: relative;
+                opacity: 0;
+                transition: all ease-in-out .4s;
+
+                &::before,
+                &::after {
+                    content: "";   
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    transition: all ease-in-out .4s;
+                }
+
+                &::before {
+                    border-left: 2px dashed #33333D;
+                    height: 25px;
+                }
+
+                &::after {
+                    width: 26px;
+                    height: 26px;
+                    border-radius: 50%;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                }
+
+                &:nth-child(4)::after,
+                &:nth-child(5)::after,
+                &:nth-child(6)::after {
+                    top: -10px;
+                }
+
+                &:nth-child(1)::after,
+                &:nth-child(2)::after,
+                &:nth-child(3)::after {
+                    bottom: -10px;
+                }
+
+                &:nth-child(4)::before,
+                &:nth-child(5)::before,
+                &:nth-child(6)::before {
+                    top: -25px;
+                }
+
+                &:nth-child(1)::before,
+                &:nth-child(2)::before,
+                &:nth-child(3)::before {
+                    bottom: -25px;
+                }
+
+                &:first-child {
+                    margin-left: 35px;
+                }
+                &:nth-child(4),
+                &:nth-child(5),
+                &:nth-child(6) {
+                    margin-left: auto;
+                }
+            }
+        }
+
+        .stage--done {
+            &::before {
+                background-image: url('../images/roadmap/stages/purple-line.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: auto;
+            }
+
+            .stage__title {
+                .accent {
+                    color: #7167E1;
+                }
+    
+                &::before {
+                    background-color: #7167E1;
+                    background-image: url('../images/roadmap/stages/check.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: auto;
+                }
+            }
+            .stage__item {
+                background-color: #7167E1;
+
+                &::before {
+                    border-left: 2px dashed #7167E1;
+                    height: 25px;
+                }
+
+                &::after {
+                    background-color: #7167E1;
+                    background-image: url('../images/roadmap/stages/check.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: auto;
+                }
+            }
+        }
+        .stage--process {
+            margin: 80px 0;
+            padding: 75px 0;
+            border-top: 1px solid #33333D;
+            border-bottom: 1px solid #33333D;
+
+            &::before {
+                background-image: url('../images/roadmap/stages/orange-line.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: auto;
+            }
+
+            .stage__title {
+                .accent {
+                    color: #F67052;
+                }
+    
+                &::before {
+                    background-color: #F67052;
+                    background-image: url('../images/roadmap/stages/time.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: auto;
+                }
+            }
+            .stage__item {
+                background-color: rgba(255, 255, 255, 0.02);
+                border: 1px solid rgba(246, 112, 82, 0.5);
+                color: #F67052;
+
+                &::before {
+                    border-left: 2px dashed #F67052;
+                    height: 25px;
+                }
+
+                &::after {
+                    background-color: #F67052;
+                    background-image: url('../images/roadmap/stages/time.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: auto;
+                }
+
+                &:nth-child(4) {
+                    margin-right: -100px;
+                }
+            }
+        }
+        .stage--planned {
+            &::before {
+                background-image: url('../images/roadmap/stages/grey-line.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: auto;
+                transform: translateY(40px);
+            }
+
+            .stage__list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .stage__title {
+                .accent {
+                    color: #7B8090;
+                }
+    
+                &::before {
+                    background-color: rgba(255, 255, 255, 0.02);
+                }
+            }
+            .stage__item {
+                background-color: rgba(255, 255, 255, 0.02);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                color: #7B8090;
+                white-space: nowrap;
+
+                .descript {
+                    font-weight: 400;
+                }
+
+                &::before {
+                    border-left: 2px dashed #7B8090;
+                    height: 25px;
+                }
+
+                &::after {
+                    background-color: rgba(255, 255, 255, 0.02);
+                }
+
+                &:nth-child(3)::after {
+                    top: -10px;
+                }
+                &:nth-child(3)::before {
+                    top: -25px;
+                }
+
+                &:nth-child(2) {
+                    margin-left: -300px;
+                }
+
+                &:nth-child(3) {
+                    margin-left: auto;
+                    margin-right: -480px;
+                }
+            }
+        }
+        .stage.animated {
+            position: relative;
+
+            &::before {
+                width: 100%;
+            }
+
+            .stage__title {
+                animation: typing 3.5s steps(40, end) forwards;
+            }
+
+            .stage__item {
+                opacity: 1;
+
+                &:nth-child(4)::after,
+                &:nth-child(5)::after,
+                &:nth-child(6)::after {
+                    top: -50px;
+                }
+
+                &:nth-child(1)::after,
+                &:nth-child(2)::after,
+                &:nth-child(3)::after {
+                    bottom: -50px;
+                }
+            }
+        }
+        .stage--planned.animated {
+            position: relative;
+
+            .stage__item {
+                opacity: 1;
+
+                &:nth-child(3)::after {
+                    top: -50px;
+                }
+                &:nth-child(3)::before {
+                    top: -25px;
+                }
+            }
+        }
+    }
 }

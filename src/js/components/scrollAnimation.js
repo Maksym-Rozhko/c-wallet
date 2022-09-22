@@ -29,3 +29,6 @@ scrollAnimation('.manage .end-elem4');
 scrollAnimation('.securely .end-elem1');
 scrollAnimation('.securely .end-elem2');
 scrollAnimation('.main .securely-end-elem');
+scrollAnimation('.stages .end-elem1');
+scrollAnimation('.stages .end-elem2');
+scrollAnimation('.stages .end-elem3');
