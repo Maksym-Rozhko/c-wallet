@@ -341,6 +341,108 @@
     }
 }
 
+.addresses {
+    padding: 150px 0;
+    margin-bottom: 150px;
+    position: relative;
+    overflow: hidden;
+    
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+    }
+
+    &::before {
+        width: 696px;
+        height: 700px;
+        left: -467px;
+        bottom: -467px;
+        background: #F77052;
+        filter: blur(200px);
+    }
+
+    &::after {
+        width: 613px;
+        height: 616px;        
+        right: -314px;
+        bottom: -314px;
+        background: #7167E1;
+        filter: blur(170px);
+    }
+
+    &__title {
+        @include title;
+        margin-bottom: 40px;
+        
+        &.animated {
+            animation: typing 3.5s steps(40, end) forwards;
+        }
+    }
+
+    .btn-main {
+        @include btn-main;
+        background: #7167E1;
+        border: 1px solid transparent;
+        max-width: 410px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 150%;
+
+        &:hover {
+            color: #7167E1;
+            border: 1px solid #7167E1;
+            background: transparent;
+        }
+    }
+
+    &__images {
+        position: relative;
+
+        .desktop {
+            transition: all ease-in-out 1s;
+        }
+        .desktop-border {
+            width: 0;
+            max-width: 956px;
+            display: block;
+            margin: 0 auto;
+            position: absolute;
+            right: 0;
+            left: 0;
+            height: 0;
+            max-height: 122px;
+        }
+        .desktop-items {
+            width: 100%;
+            padding-top: 60px;
+            max-width: 1326px;
+            margin: 0 auto;
+            display: block;
+            opacity: 0;
+        }
+        .mobile {
+            display: none;
+        }
+    }
+    &__images.animated {
+        .desktop-border {
+            height: 100%;
+            width: 100%;
+        }
+        .desktop-items {
+            opacity: 1;
+        }
+    }
+}
+
 .screen {
     &__title {
         @include title;

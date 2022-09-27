@@ -30,8 +30,12 @@
     .steps,
     .try,
     .manage,
-    .securely {
+    .securely,
+    .addresses {
         padding: 120px 0;
+    }
+    .addresses {
+        margin-bottom: 120px;
     }
 
     .securely {
@@ -73,6 +77,11 @@
     .try {
         &__container {
             padding: 50px 75px;
+        }
+    }
+    .addresses {
+        &__title {
+            font-size: 60px;
         }
     }
     .securely {
@@ -165,6 +174,35 @@
             &::after {
                 right: -50px;
                 top: -100px;
+            }
+        }
+    }
+    .addresses {
+        padding: 100px 0;
+        margin-bottom: 100px;
+
+        &__title {
+            font-size: 40px;
+        }
+
+        &::before {
+            left: -500px;
+            bottom: -500px;
+        }
+    
+        &::after {
+            right: -400px;
+            bottom: -400px;
+        }
+    
+        &__images {
+            .desktop-border {
+                object-fit: contain;
+                max-width: 700px;
+                max-height: 90px;
+            }
+            .desktop-items {
+                padding-top: 44px;
             }
         }
     }
@@ -286,6 +324,39 @@
         &__title {
             font-size: 30px;
             margin-bottom: 15px;
+        }
+    }
+    .addresses {
+        padding: 70px 0;
+        margin-bottom: 70px;
+
+        &__title {
+            font-size: 30px;
+        }
+
+        &::before {
+            left: -550px;
+            bottom: -550px;
+        }
+    
+        &::after {
+            right: -450px;
+            bottom: -450px;
+        }
+
+        .btn-main {
+            padding: 10px;
+            max-width: 310px;
+        }
+    
+        &__images {
+            .desktop-border {
+                max-width: 500px;
+                max-height: 65px;
+            }
+            .desktop-items {
+                padding-top: 30px;
+            }
         }
     }
     .screen {
@@ -507,6 +578,34 @@
 
         &__container.animated {
             background: url('../images/home/banner/phones-mb.png') no-repeat center bottom/auto, url('../images/home/banner/banner-bg-mob.png') no-repeat center/cover;
+        }
+    }
+    .addresses {
+        padding: 80px 0;
+        margin-bottom: 80px;
+
+        &__title {
+            display: flex;
+            flex-direction: column;
+            font-size: 50px;
+            margin-bottom: 32px;
+        }
+
+        .btn-main {
+            padding: 17px;
+            max-width: 334px;
+        }
+
+        &__images {
+            .desktop {
+                display: none;
+            }
+            .mobile {
+                display: block;
+                margin: 0 auto;
+                width: 100%;
+                max-width: 335px;
+            }
         }
     }
     .screen {
