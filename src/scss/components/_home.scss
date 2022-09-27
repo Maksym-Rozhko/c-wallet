@@ -168,19 +168,20 @@
 
     &__title {
         @include title;
+        margin-bottom: 184px;
     }
 
-    &__text {
-        @include text;
-        max-width: 900px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 40px;
-        margin-bottom: 115px;
-        font-size: 14px;
-        color: var(--cs-grey);
-        text-align: center;
-    }
+    // &__text {
+    //     @include text;
+    //     max-width: 900px;
+    //     margin-left: auto;
+    //     margin-right: auto;
+    //     margin-top: 40px;
+    //     margin-bottom: 115px;
+    //     font-size: 14px;
+    //     color: var(--cs-grey);
+    //     text-align: center;
+    // }
 
     .start {
         @include flex-all-sb;
@@ -194,21 +195,21 @@
             content: "";
             position: absolute;
             border-bottom: 1px solid #23232B;
-            bottom: 10px;
+            top: 120px;
             width: 0;
             transition: all ease-in-out .4s;
         }
 
         &::before {
-            left: 300px;
+            left: 308px;
         }
 
         &::after {
-            right: 300px;
+            right: 284px;
         }
 
         &__icon {
-            margin-right: 25px;
+            margin-right: 45px;
 
             img {
                 opacity: 0;
@@ -217,8 +218,12 @@
             }
         }
 
+        &__wrap {
+            margin-top: 35px;
+        }
+
         &__item {
-            max-width: 337px;
+            max-width: 400px;
             width: 100%;
         }
 
@@ -228,9 +233,8 @@
             line-height: 150%;
             text-align: center;
             color: var(--cs-white);
-            margin-top: 35px;
-            margin-bottom: 24px;
-            min-height: 108px;
+            margin-top: 28px;
+            margin-bottom: 12px;
         }
 
         &__step {
@@ -239,6 +243,13 @@
             line-height: 150%;
             text-align: center;
             color: var(--cs-grey);
+        }
+
+        &__text {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: #7B8090;
         }
     }
 
@@ -399,6 +410,8 @@
     .btn-main {
         @include btn-main;
         margin: 0 auto;
+        position: relative;
+        right: 20px;
     }
 
     .mobile-items {
@@ -534,24 +547,18 @@
     }
 
     &__title-groups {
+        @include title;
         margin-top: 0;
         margin-bottom: 40px;
         max-width: fit-content;
+        margin-left: 0;
 
-        span {
-            @include title;
-            display: block;
-            max-width: fit-content;
-            margin-left: 0;
-        }
         .accent {
             color: var(--cs-main);
         }
 
         &.animated {
-            span {
-                animation: typing 3.5s steps(40, end) forwards;
-            }
+            animation: typing 3.5s steps(40, end) forwards;
         }
     }
 

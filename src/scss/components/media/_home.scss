@@ -36,7 +36,7 @@
 
     .securely {
         &::after {
-            background: url('../images/home/securely/mac-2.png') no-repeat center right/800px;
+            background: url('../images/home/securely/mac-2.png') no-repeat center right/700px;
         }
 
         &__title-groups {
@@ -54,6 +54,22 @@
             font-size: 100px;
         }
     }
+    .steps {
+        .start {
+            &::after,
+            &::before {
+                width: 200px;
+            }
+        }
+        &__container.animated {
+            .start {
+                &::after,
+                &::before {
+                    width: 200px;
+                }
+            }
+        }
+    }
     .try {
         &__container {
             padding: 50px 75px;
@@ -61,7 +77,7 @@
     }
     .securely {
         &::after {
-            background: url('../images/home/securely/mac-2.png') no-repeat top 100px right/600px;
+            background: url('../images/home/securely/mac-2.png') no-repeat top 10px right/500px;
         }
     }
 }
@@ -107,8 +123,36 @@
         }
 
         .start {
+            &::after,
+            &::before {
+                width: 100px;
+            }
+            &::before {
+                left: 258px;
+            }
+            &::after {
+                right: 254px;
+            }
             &__title {
-                margin: 25px 0;
+                margin-top: 25px;
+            }
+            &__text {
+                max-width: 210px;
+                margin: 0 auto;
+
+                br {
+                    display: none;
+                }
+            }
+        }
+        .steps {
+            &__container.animated {
+                .start {
+                    &::after,
+                    &::before {
+                        width: 100px;
+                    }
+                }
             }
         }
     }
@@ -171,13 +215,11 @@
         padding: 100px 0;
 
         &::after {
-            background: url('../images/home/securely/mac-2.png') no-repeat top 50px right/500px;
+            background: url('../images/home/securely/mac-2.png') no-repeat top 10px right/400px;
         }
 
         &__title-groups {
-            span {
-                font-size: 60px;
-            }
+            font-size: 60px;
         }
     }
 }
@@ -213,7 +255,20 @@
         &__title {
             font-size: 40px;
         }
+        .start {
+            &::after,
+            &::before {
+                content: none;
+            }
+            &__title {
+                min-height: 54px;
+            }
+            &__text {
+                min-height: 65px;
+            }
+        }
     }
+    
     .try {
         padding: 70px 0;
 
@@ -276,13 +331,11 @@
         padding: 70px 0;
 
         &::after {
-            background: url('../images/home/securely/mac-2.png') no-repeat top 50px right/300px;
+            background: url('../images/home/securely/mac-2.png') no-repeat top 10px right/300px;
         }
 
         &__title-groups {
-            span {
-                font-size: 40px;
-            }
+            font-size: 40px;
         }
     }
 }
@@ -361,11 +414,6 @@
         .start {
             flex-direction: column;
             align-items: center;
-            
-            &::before,
-            &::after {
-                content: none;
-            }
 
             &__item {
                 @include flex-all-center;
@@ -386,7 +434,7 @@
             }
 
             &__wrap {
-                margin-top: 25px;
+                margin-top: 45px;
                 display: flex;
                 flex-direction: column-reverse;
                 align-items: flex-start;
@@ -405,11 +453,17 @@
 
             &__title {
                 margin-top: 12px;
-                margin-bottom: 0;
+                margin-bottom: 12px;
                 min-width: inherit;
                 max-width: 230px;
+                min-height: inherit;
                 text-align: left;
                 font-size: 14px;
+            }
+
+            &__text {
+                min-height: inherit;
+                text-align: left;
             }
         }
 
@@ -576,12 +630,9 @@
 
         &__title-groups {
             margin-bottom: 40px;
-
-            span {
-                margin-left: auto;
-                margin-right: auto;
-                font-size: 50px;
-            }
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 50px;
         }
 
         .assets {
@@ -619,6 +670,13 @@
         &__container {
             padding-left: 32px;
             padding-right: 32px;
+        }
+    }
+    .steps {
+        .start {
+            &__text {
+                font-size: 12px;
+            }
         }
     }
 }
