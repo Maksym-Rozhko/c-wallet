@@ -21,6 +21,19 @@
         @include flex-v-center;
     }
 
+    .logo {
+        position: relative;
+
+        span {
+            position: absolute;
+            bottom: -10px;
+            right: inherit;
+            left: 37px;
+            color: #fff;
+            font-size: 13px;
+        }
+    }
+
     .nav {
         ul {
             padding-left: 0;
@@ -222,13 +235,15 @@
     .socials {
         @include socials;
     }
-    .sign-in {
+    .auth {
         @include flex-v-center;
         gap: 8px;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 150%;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 100%;    
         color: #7167E1;
+        padding-left: 30px;
+        border-left: 1px solid #3E3E4A;
 
         svg {
             color: #7167E1;
@@ -237,6 +252,24 @@
 
         &:hover svg {
             color: var(--cs-white);
+        }
+    }
+
+    .auth--btn {
+        background: rgba(113, 103, 225, .1);
+        border: 1px solid #7167E1;
+        border-radius: 50px;
+        margin-left: 10px;
+        padding: 10px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all ease-in-out .4s;
+
+        &:hover {
+            background: rgba(113, 103, 225, 1);
+            color: #fff;
         }
     }
 }

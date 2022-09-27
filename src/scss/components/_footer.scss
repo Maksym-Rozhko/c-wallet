@@ -15,9 +15,19 @@
 
         .logo {
             max-width: 154px;
+            position: relative;
 
             img {
                 width: 154px;
+            }
+
+            span {
+                position: absolute;
+                bottom: -10px;
+                right: inherit;
+                left: 44px;
+                color: #fff;
+                font-size: 13px;
             }
         }
 
@@ -121,6 +131,10 @@
                 &:hover {
                     color: rgba(255, 255, 255, 1);
                 }
+
+                &:not(:last-child) {
+                    margin-right: 30px
+                }
             }
         }
 
@@ -129,6 +143,7 @@
 
             .list {
                 margin-left: 0;
+                margin-right: 0;
                 
                 &__link {
                     .icon {
