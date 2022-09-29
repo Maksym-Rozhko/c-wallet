@@ -89,3 +89,89 @@
         }
     }
 }
+
+.contacts-banner {
+    padding-bottom: 80px;
+    position: relative;
+    overflow: hidden;
+    
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    &::before {
+        width: 362px;
+        height: 362px;
+        right: 446px;
+        bottom: -250px;
+        background: #F77052;
+        filter: blur(125px);
+    }
+
+    &::after {
+        width: 575px;
+        height: 575px;        
+        right: -69px;
+        bottom: -388px;
+        background: #8562BF;
+        filter: blur(150px);
+    }
+
+    &__container {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        padding: 80px;
+        text-align: center;
+        background: url('../images/home/securely/securely-bg.jpg') no-repeat center/cover;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 150%;
+        letter-spacing: -0.035em;
+        color: var(--cs-white);
+        margin-top: 0;
+        margin-bottom: 0;                
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 160%;
+        color: var(--cs-grey);
+        margin-top: 20px;
+        margin-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 494px;
+    }
+
+    .contacts-link {
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(20px);
+        border-radius: 10px;
+        padding: 17px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 130%;
+        color: #7167E1;
+        max-width: 320px;
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        box-shadow: 0 0 5px transparent;
+        transition: all ease-in-out .4s;
+
+        &:hover {
+            background: transparent;
+            border: 1px solid #7167E1;
+            box-shadow: 0 0 15px 2px #7167E1;
+        }
+    }
+}

@@ -31,6 +31,26 @@
             }
         }
     }
+    .contacts-banner {
+        &::before {
+            width: 187px;
+            height: 187px;
+            right: inherit;
+            left: 50px;
+            bottom: -132px;
+        }
+    
+        &::after {
+            width: 298px;
+            height: 298px;        
+            bottom: -190px;
+            right: -128px;
+        }
+
+        &__container {
+            padding: 70px 30px;
+        }
+    }
 }
 
 @include mobile {
@@ -50,6 +70,11 @@
                 margin-left: auto;
                 margin-right: auto;
             }
+        }
+    }
+    .contacts-banner {
+        .contacts-link {
+            max-width: 274px;
         }
     }
 }
