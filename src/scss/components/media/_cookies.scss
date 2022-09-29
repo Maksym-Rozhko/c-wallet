@@ -11,6 +11,28 @@
     }
 }
 
+@include small-tablet {
+    .cookies-page {
+        .cookies-info {
+            &__container {
+                margin-top: 80px;
+                margin-bottom: 60px;
+            }
+            .content {
+                .text-group {
+                    display: block;
+                }
+                .text {
+                    max-width: inherit;
+                }
+                .title-inner {
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+}
+
 @include mobile {
     .cookies-page {
         .cookies {
