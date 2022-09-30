@@ -73,6 +73,9 @@
         }
     }
     .contacts-banner {
+        &__container {
+            background: url('../images/cookies/contacts-bg-mob.png') no-repeat center/cover;
+        }
         .contacts-link {
             max-width: 274px;
         }
