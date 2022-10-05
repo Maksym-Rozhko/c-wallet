@@ -8,10 +8,17 @@ const smoothScrollToElems = (links) => {
 
                 anchor.addEventListener('click', (e) => {
                     e.preventDefault();
-                    document.querySelector(blockID).scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+                    if (document.querySelector(blockID)) {
+                        document.querySelector(blockID).scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    } else {
+                        try {
+                            localStorage.setItem('scrollTo', 'getStartedSteps');
+                        } catch (error) {}
+                        window.location.href = '/';
+                    }
                 });
             };
         };

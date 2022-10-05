@@ -168,6 +168,7 @@
 
     &__title {
         @include title;
+        line-height: 120%;
         margin-bottom: 184px;
     }
 
@@ -464,22 +465,22 @@
         margin-bottom: 60px;
     }
     &__image {
-        .image {
-            transform: scale(0);
-            border-radius: 1000px;
-            transition: all ease-in-out .4s;
-        }
+        // .image {
+        //     // transform: scale(0);
+        //     border-radius: 1000px;
+        //     transition: all ease-in-out .4s;
+        // }
         .image.mob {
             display: none;
         }
     }
 
-    &__image.animated {
-        .image {
-            border-radius: 0px;
-            transform: scale(1);
-        }
-    }
+    // &__image.animated {
+    //     .image {
+    //         border-radius: 0px;
+    //         // transform: scale(1);
+    //     }
+    // }
 }
 
 .manage {
@@ -503,6 +504,7 @@
 
     &__title {
         @include title;
+        line-height: 120%;
 
         &.animated {
             animation: typing 3.5s steps(40, end) forwards;
