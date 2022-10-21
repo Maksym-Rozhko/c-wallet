@@ -13,12 +13,12 @@
                 margin-right: 25px;
             }
         }
-        .auth {
+        .auth[title="Log in"] {
             padding-left: 15px;
+            white-space: nowrap;
         }
     }
 }
-
 @include tablet {
     .header {
         .logo {

@@ -486,7 +486,7 @@
 .manage {
     padding-top: 150px;
     padding-bottom: 125px;
-    background: url('../images/home/manage/manage-bg.jpg') no-repeat bottom/contain;
+    background: url('../images/home/manage/manage-bg.jpg') no-repeat center/cover;
     position: relative;
 
     &::after {
@@ -652,6 +652,7 @@
 
     &__title-groups {
         @include title;
+        line-height: 120%;
         margin-top: 0;
         margin-bottom: 40px;
         max-width: fit-content;

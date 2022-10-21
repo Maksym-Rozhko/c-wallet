@@ -151,6 +151,18 @@
                 margin-right: auto;
             }
         }
+        .stages {
+            .stage.animated {
+                .stage__title {
+                    animation: none;
+                }
+            }
+            .stage {
+                &__item {
+                    opacity: 1;
+                }
+            }
+        }
         .try {
             padding-top: 150px;
             padding-bottom: 150px;
